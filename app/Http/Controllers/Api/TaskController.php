@@ -13,7 +13,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return Task::orderBy('created_at','desc')->get();
+        return Task::orderBy('created_at', 'desc')->get();
     }
 
     /**
@@ -42,7 +42,7 @@ class TaskController extends Controller
     public function update(Request $request, Task $task)
     {
         $data = $request->validate([
-
+            'title' => 'sometime|required|string|max:255'
         ]);
     }
 
