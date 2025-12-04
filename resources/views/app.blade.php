@@ -40,5 +40,6 @@
             <p>You have successfully created a Laravel Blade page.</p>
         </div>
     </div>
+    <div id="app"></div>
 </body>
 </html>
