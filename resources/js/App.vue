@@ -12,7 +12,7 @@ export default defineComponent({
     components: {TaskForm, TaskList},
 
 setup(){
-
+const tasks = ref<Task[]>([]);
 };
 
 })
