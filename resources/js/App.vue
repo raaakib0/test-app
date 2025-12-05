@@ -5,3 +5,11 @@
         <TaskList :tasks="tasks" @updated="fetchTasks"/>
     </div>
 </template>
+
+<scritp lang="ts">
+
+export default defineComponent({
+    
+})
+
+</scritp>
