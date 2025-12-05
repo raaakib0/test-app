@@ -9,7 +9,12 @@
 <scritp lang="ts">
 
 export default defineComponent({
-    
+    components: {TaskForm, TaskList},
+
+setup(){
+
+};
+
 })
 
 </scritp>
