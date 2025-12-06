@@ -16,7 +16,9 @@ const tasks = ref<Task[]>([]);
 const fetchTasks = async ()=>{
     const res = await axios.get('api/tasks');
     tasks.value = res.data;
-}
+};
+onMounted(fetchTasks);
+return{tasks,fetchTasks};
 };
 
 })
