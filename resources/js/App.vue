@@ -13,6 +13,10 @@ export default defineComponent({
 
 setup(){
 const tasks = ref<Task[]>([]);
+const fetchTasks = async ()=>{
+    const res = await axios.get('api/tasks');
+    tasks.value = res.data;
+}
 };
 
 })
