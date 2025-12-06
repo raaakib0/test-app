@@ -7,6 +7,11 @@
 </template>
 
 <scritp lang="ts">
+import {defineComponent,ref, onMounted  } from "vue";
+import axios from 'axios';
+import TaskForm from './components/TaskForm.vue';
+import TaskList from './components/TaskList.vue';
+import type {Task} from './type';
 
 export default defineComponent({
     components: {TaskForm, TaskList},
