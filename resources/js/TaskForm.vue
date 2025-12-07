@@ -4,6 +4,6 @@
 <button type="submit" >Add</button>
     </form>
 </template>
-<script>
+<script lang="ts">
     
 </script>
