@@ -9,7 +9,9 @@
 emits: ['created'],
 setup(_,{emit}){
 const title=ref('');
-
+const submit = async()=>{
+    if(!title.value) return;
+}
 };
     });
 </script>
