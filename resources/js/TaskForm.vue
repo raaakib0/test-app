@@ -6,6 +6,9 @@
 </template>
 <script lang="ts">
     export default defineComponent({
+emits: ['created'],
+setup(_,{emit}){
 
+};
     });
 </script>
