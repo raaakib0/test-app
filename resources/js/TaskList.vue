@@ -9,9 +9,12 @@
 </template>
 
 <script lang="ts">
+import { Task } from "./types";
+
 
 export default defineComponent({
-
+props:{tasks: Array as ()=> Task[] },
+emit: ['updated'],
 });
 
 </script>
