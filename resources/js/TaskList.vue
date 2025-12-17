@@ -20,7 +20,8 @@ emit: ['updated'],
 
 setup(props,{emit}){
 const toggle =  async (task: Task)=>{
-
+await axios.put(`/api/tasks/${task.id}`, {completed: !task.completed});
+emit('updated');
 };
 };
 
