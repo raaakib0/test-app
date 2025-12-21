@@ -9,8 +9,8 @@
 <script lang="ts">
 import {defineComponent,ref, onMounted  } from "vue";
 import axios from 'axios';
-import TaskForm from './components/TaskForm.vue';
-import TaskList from './components/TaskList.vue';
+import TaskForm from './TaskForm.vue';
+import TaskList from './TaskList.vue';
 import type {Task} from './type';
 
 export default defineComponent({
@@ -21,7 +21,7 @@ const tasks = ref<Task[]>([]);
 const fetchTasks = async ()=>{
     const res = await axios.get('/api/tasks');
     tasks.value = res.data;
-};
+}
 onMounted(fetchTasks);
 return{tasks,fetchTasks};
 }
