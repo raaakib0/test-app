@@ -11,7 +11,7 @@ import axios from 'axios';
 import { defineComponent, onMounted, ref } from 'vue';
 import TaskForm from './TaskForm.vue';
 import TaskList from './TaskList.vue';
-import type { Task } from './type';
+import type { Task } from './types';
 
 export default defineComponent({
     components: { TaskForm, TaskList },
