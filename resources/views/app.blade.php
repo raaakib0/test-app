@@ -31,7 +31,7 @@
             color: #555;
         }
     </style>
-    @vite('resources/js/app.ts')
+    @vite('/resources/js/app.ts')
 </head>
 <body>
     <div class="container">
