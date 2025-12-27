@@ -22,8 +22,12 @@ export default defineComponent({
     setup(_,{emit}){
         const title = ref('');
         const submit = async() =>{
-
+            if(!title.value) return;
+            await axios.post('/api/tasks', {title: title.value});
+            title.value='';
+            emit('created');
         };
-    },ss
+        return {title, submit};
+    },
 });
 </script>
