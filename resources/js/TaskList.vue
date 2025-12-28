@@ -33,7 +33,9 @@ export default defineComponent({
     //         });
     //         emit('updated');
     //     };
-    s
+    setup(props, {emit}){
+
+    };
 
         const remove = async (id: number) => {
             await axios.delete(`/api/tasks/${id}`);
