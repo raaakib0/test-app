@@ -26,13 +26,14 @@ export default defineComponent({
     props: { tasks: Array as () => Task[] },
     emit: ['updated'],
 
-    setup(props, { emit }) {
-        const toggle = async (task: Task) => {
-            await axios.put(`/api/tasks/${task.id}`, {
-                completed: !task.completed,
-            });
-            emit('updated');
-        };
+    // setup(props, { emit }) {
+    //     const toggle = async (task: Task) => {
+    //         await axios.put(`/api/tasks/${task.id}`, {
+    //             completed: !task.completed,
+    //         });
+    //         emit('updated');
+    //     };
+    s
 
         const remove = async (id: number) => {
             await axios.delete(`/api/tasks/${id}`);
